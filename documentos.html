@@ -74,16 +74,28 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <div class="alert alert-warning" role="alert">
-                    <h4 class="alert-heading">Aviso Importante</h4>
-                    <p>El servicio de facturación que se muestra, es unicamente para clientes de infox que facturan electrónicamente a sus propios clientes.
-                        Si lo que buscas es facturar un ticket te recomendamos contactes a la empresa en donde consumiste, telefónicamente. En este buscador podrás encontrar sus números.</p>
+                <div class="card pad20 marbo20">
+                    <h5>Busca tus documentos aquí</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
                 </div>
                 <form class="card pad20">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Usuario</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información.</small>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Nombre del Documento</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputState">Categoría</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Elegir...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Contraseña</label>
@@ -117,15 +129,16 @@
                 </form>
             </div>
             <div class="col">
-                <div class="center">
-                    <button class="btn btn-primary btn-block">¿Cuánto Cuesta?</button>
-                </div>
+                <button class="btn btn-primary btn-block"><i class="fas fa-file"></i> Nuevo Documento</button>
+                <br />
+                <button class="btn btn-primary btn-block"><i class="fas fa-folder"></i> Nueva Categoría</button>
                 <hr />
-                <h4>FAQ's <i class="fas fa-question-circle"></i></h4>
+                <h5>Lista de Documentos por Categoría</h5>
                 <ul class="list-group">
-                    <li class="list-group-item">¿Qué es la Factura Electrónica?</li>
-                    <li class="list-group-item">¿Qué necesito para facturar electrónicamente?</li>
-                    <li class="list-group-item">¿Estoy obligado a facturar electrónicamente?</li>
+                    <li class="list-group-item"><i class="fas fa-folder"></i> American Express</li>
+                    <li class="list-group-item"><i class="fas fa-folder"></i> Barretal</li>
+                    <li class="list-group-item"><i class="fas fa-folder"></i> CEPAMEX</li>
+                    <li class="list-group-item"><i class="fas fa-folder"></i> CICAP</li>
                 </ul>
             </div>
         </div>
